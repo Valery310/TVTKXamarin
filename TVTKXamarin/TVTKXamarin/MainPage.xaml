@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+             x:Class="TVTKXamarin.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <o:VideoPlayer 
+                       x:Name="videoPlayer"
+                       />
+       <!--
+        Source="http://vjs.zencdn.net/v/oceans.mp4" 
+                        AutoPlay="True" 
+                       DisplayControls="True" 
+        
+        <o:VideoPlayer
+	Source="http://localhost:64647/getmultimedia?stream=Stream1&content=Video&id=2"
+	AutoPlay="True|False"
+	DisplayControls="True|False"
+	FillMode="Resize|ResizeAspect|ResizeAspectFill"
+	TimeElapsedInterval="0,1,2,3..."
+	Repeat="True|False"
+	Volume="..."
+	Source="http://..."
+	
+	Playing="VideoPlayer_OnPlaying"
+	Paused="VideoPlayer_OnStopped"
+	TimeElapsed="VideoPlayer_OnTimeElapsed"
+	Completed="VideoPlayer_OnCompleted"
+	Failed="VideoPlayer_OnFailed"
+	PlayerStateChanged="VideoPlayer_OnPlayerStateChanged"
+	-->
+    </StackLayout>
+
+</ContentPage>
